@@ -1,0 +1,190 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+
+#logo {
+  cursor: pointer;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  height: 70px;
+  background-color: rgba(0, 0, 0, 0.607);
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+header > nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 20px;
+}
+
+nav > h1 {
+  color: red;
+  font-size: 30px;
+  margin-left: 150px;
+}
+
+nav > a > img {
+  width: 80px;
+}
+
+nav > input {
+  width: 250px;
+  height: 25px;
+  font-size: 18px;
+  border-radius: 20px;
+  padding-left: 5px;
+}
+
+.slider-container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.card {
+  width: 100%;
+  display: contents;
+}
+
+.card-text {
+  position: absolute;
+  top: 65%;
+  margin-left: 30px;
+  padding-bottom: 1rem;
+  max-width: 42%;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.card-text > h1 {
+  padding: 0.5rem 1rem 0rem;
+  text-transform: uppercase;
+  font-size: 2.3rem;
+  transition: 0.3s;
+  color: rgb(255, 0, 0);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.card-text > span {
+  padding: 0rem 1rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #e3e2e2;
+}
+
+.card-text > p {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: left;
+  padding: 0.5rem 1rem;
+  font-size: 1.1rem;
+  color: #e3e2e2;
+}
+
+.treler {
+  width: 120px;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  background-color: red;
+  font-size: 17px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.treler > a {
+  text-decoration: none;
+  color: white;
+}
+
+.dop {
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+  font-size: 17px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.movie-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.slider img {
+  width: 100%;
+  height: 910px;
+  object-fit: cover;
+}
+
+.prev-button,
+.next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 60px;
+  height: 120px;
+  background-color: rgba(19, 19, 19, 0.466);
+  border: none;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+}
+
+.prev-button:hover,
+.next-button:hover {
+  background-color: rgba(255, 253, 253, 0.345);
+  color: red;
+}
+
+.prev-button {
+  left: 10px;
+}
+
+.next-button {
+  right: 10px;
+}
+
+.movies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 2.5rem;
+  margin-top: 150px;
+  padding: 0 20px;
+}
+
+.image {
+  border-radius: 20px;
+  max-width: 400px;
+  width: 100%;
+  height: 400px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.image:hover{
+box-shadow: 0px 3px 20px red;
+transform: scale(1.1);
+border-radius: 50%;
+}
